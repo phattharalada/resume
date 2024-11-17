@@ -1,0 +1,157 @@
+body {
+    font-family: 'Pacifico', cursive;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+img.profile {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+.profile-container {
+    display: flex;
+    align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    justify-content: center;
+    gap: 50px; /* ระยะห่างระหว่างรูปภาพและข้อความ */
+    flex-wrap: wrap; /* ทำให้ข้อความและรูปภาพจัดเรียงใหม่เมื่อหน้าจอเล็ก */
+    padding: 40px 20px;
+    background-color: #6a0dad;
+    border-radius: 0 0 70px 0;
+}
+.profile-container a {
+    color: #ffffff; /* เปลี่ยนสีลิงก์ */
+    text-decoration: none; /* ลบเส้นใต้ */
+}
+.profile-container a:hover {
+    text-decoration: underline; /* เพิ่มเส้นใต้เมื่อวางเมาส์ */
+}
+
+.profile-container img {
+    border: 5px solid white; /* เพิ่มขอบสีขาวรอบรูป */
+}
+.profile-info {
+    flex: 0 1 50%;
+    text-align: left;
+    margin-left: 0;
+}
+.profile-info h1 {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.profile-info h2 {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+.profile-info p {
+    color: #ffffff;
+}
+.profile-info hr {
+    border: none; /* ลบเส้นปกติ */
+    border-top: 5px dotted #ffffff !important; /* เส้นปะสีขาว */
+    width: 80%; /* ปรับความยาวเส้น */
+    margin: 10px; /* จัดให้อยู่กึ่งกลาง */
+}
+.navbar {
+    padding: 15px 20px;
+    background-color: #8251aa; /* สีม่วงอ่อน */
+}
+
+.navbar .nav-link, .navbar .navbar-brand {
+    color: white; /* สีข้อความ */
+    font-size: 1.2rem;
+    font-weight: bold; 
+}
+
+.navbar .nav-link:hover {
+    background-color: #d4a3ff; /* สีพื้นหลังใหม่ */
+    color: #ffffff; /* สีข้อความ */
+    border-radius: 5px; /* เพิ่มความโค้งให้เมนู */
+    transition: background-color 0.3s ease; /* เพิ่มเอฟเฟกต์เลื่อนนุ่ม */
+}
+hr.dotted {
+    border: none; /* ลบเส้นปกติ */
+    border-top: 5px dotted #6a0dad; /* เส้นรอยปะ */
+    width: 80%; /* ปรับความยาว */
+    margin: 20px 0; /* จัดให้อยู่กึ่งกลาง */
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* สร้าง 2 คอลัมน์ */
+    gap: 20px; /* ระยะห่างระหว่างคอลัมน์ */
+    padding: 20px;
+    border-radius: 10px; /* เพิ่มความโค้งให้มุม */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ดูนูน */
+}
+.left-column,
+.right-column {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+}
+
+.container h3,.container h5 {
+    color: #8251aa;
+    margin-bottom: 10px;
+}
+p {
+    color: #9e5bd4;
+}
+ul {
+    color: #9e5bd4;
+}
+
+.profile-container-transcript {
+    display: flex;
+    align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    justify-content: center;
+    gap: 50px; /* ระยะห่างระหว่างรูปภาพและข้อความ */
+    flex-wrap: wrap; /* ทำให้ข้อความและรูปภาพจัดเรียงใหม่เมื่อหน้าจอเล็ก */
+    padding: 40px 20px;
+    background-color: #6a0dad;
+    border-radius: 0 0 70px 0;
+}
+.profile-info-transcript {
+    flex: 0 1 50%;
+    text-align: center;
+    margin-left: 0;
+}
+.profile-info-transcript h1 {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.profile-info-transcript h2 {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+.profile-info-transcript p {
+    color: #ffffff;
+}
+.profile-info-transcript hr {
+    border: none; /* ลบเส้นปกติ */
+    border-top: 5px dotted #ffffff !important; /* เส้นปะสีขาว */
+    width: 80%; /* ปรับความยาวเส้น */
+    margin: 0 auto;
+}
+.profile-container-transcript a {
+    color: #ffffff; /* เปลี่ยนสีลิงก์ */
+    text-decoration: none; /* ลบเส้นใต้ */
+}
+.profile-container-transcript a:hover {
+    text-decoration: underline; /* เพิ่มเส้นใต้เมื่อวางเมาส์ */
+}
+.container-transcript {
+    display: grid;
+    place-items: center; /* จัดให้อยู่ตรงกลางทั้งแนวนอนและแนวตั้ง */
+    height: 100vh; /* ใช้ความสูง 100% ของหน้าจอ */
+    background-color: #f4f4f4; /* (ตัวเลือก) ตั้งสีพื้นหลัง */
+    padding: 20px; /* (ตัวเลือก) เพิ่ม padding */
+}
+.container-transcript h1 {
+    color: #8251aa;
+}
